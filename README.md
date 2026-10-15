@@ -1,4 +1,4 @@
-# GateKeeper-Multi-Tenant-API-Gateway-Platform
+
 # GateKeeper: Multi-Tenant API Gateway Platform
 
 GateKeeper is an API gateway and API management platform built with Java and Spring Boot. Many companies (tenants) can share one GateKeeper installation. Each company manages its own routes, and the gateway sends live traffic to the right backend service using those routes.
