@@ -23,17 +23,6 @@ GateKeeper shows how that works inside, with a clear split of responsibilities:
 
 ---
 
-## Architecture
-
-```mermaid
-flowchart LR
-    Admin["Admin (Postman / UI)"] --> APIM["API Management Service<br/>(control plane)"]
-    APIM --> MySQL[("MySQL<br/>users, routes, versions, audit")]
-    GW["Smart Gateway Service<br/>(data plane)"] -- "reads active routes" --> APIM
-    Client["API Client"] --> GW
-    GW --> Backend["Tenant backend services"]
-    GW -. "request events" .-> AN["Analytics Service"]
-```
 
 **Flow in short**
 1. A platform admin creates a company (organization) and its tenant admin.
